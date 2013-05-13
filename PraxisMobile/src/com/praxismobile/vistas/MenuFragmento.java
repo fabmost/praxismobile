@@ -75,7 +75,7 @@ public class MenuFragmento extends ListFragment{
 			if(position==0)
 				icon.setImageResource(R.drawable.ic_launcher);
 			else*/
-				icon.setImageResource(getItem(position).iconRes);
+			icon.setImageResource(getItem(position).iconRes);
 			TextView title = (TextView) convertView.findViewById(R.id.row_title);
 			title.setText(getItem(position).tag);
 
