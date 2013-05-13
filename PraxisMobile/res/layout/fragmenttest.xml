@@ -4,12 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+    <com.praxismobile.custom.ResizableImageView 
+        android:id="@+id/imgswitcher"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:src="@drawable/slideshow_1"/>
 
     <Button
         android:id="@+id/button1"
