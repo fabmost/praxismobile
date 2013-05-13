@@ -19,7 +19,7 @@ public class ListaProductos extends ListFragment{
 	String lista[]= new String[]{
 	"Informacion1","Vistas",
 	"Compilacion","Estructura","Nuestros Productos",
-	"Ultima","derp"
+	"Ultima","Un Commit","derp"
 	};
 	
 	@Override
