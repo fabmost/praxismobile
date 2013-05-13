@@ -53,6 +53,14 @@ public class MenuFragmento extends ListFragment{
 			FragmentoDemo informacion = new FragmentoDemo();
 			getFragmentManager().beginTransaction()
 			.replace(R.id.fragmento1, informacion).commit();
+		}else if(position == 1){
+			AcercaDe frag = new AcercaDe();
+			getFragmentManager().beginTransaction()
+			.replace(R.id.fragmento1, frag).commit();
+		}else if(position == 3){
+			Delivery frag = new Delivery();
+			getFragmentManager().beginTransaction()
+			.replace(R.id.fragmento1, frag).commit();
 		}else if(position == 4){
 			ListaProductos frag = new ListaProductos();
 			getFragmentManager().beginTransaction()
