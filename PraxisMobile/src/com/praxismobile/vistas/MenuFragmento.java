@@ -57,12 +57,20 @@ public class MenuFragmento extends ListFragment{
 			AcercaDe frag = new AcercaDe();
 			getFragmentManager().beginTransaction()
 			.replace(R.id.fragmento1, frag).commit();
+		}else if(position == 2){
+			SectoresNegocio frag = new SectoresNegocio();
+			getFragmentManager().beginTransaction()
+			.replace(R.id.fragmento1, frag).commit();
 		}else if(position == 3){
 			Delivery frag = new Delivery();
 			getFragmentManager().beginTransaction()
 			.replace(R.id.fragmento1, frag).commit();
 		}else if(position == 4){
 			ListaProductos frag = new ListaProductos();
+			getFragmentManager().beginTransaction()
+			.replace(R.id.fragmento1, frag).commit();
+		}else if(position == 6){
+			Noticias frag = new Noticias();
 			getFragmentManager().beginTransaction()
 			.replace(R.id.fragmento1, frag).commit();
 		}
