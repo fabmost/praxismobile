@@ -4,6 +4,7 @@ import com.praxismobile.R;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class MenuFragmento extends ListFragment{
 	
@@ -49,31 +49,32 @@ public class MenuFragmento extends ListFragment{
 	
 	@Override
 	public void onListItemClick(ListView l,View v,int position, long id ){
-		if(position == 0){
-			FragmentoDemo informacion = new FragmentoDemo();
-			getFragmentManager().beginTransaction()
-			.replace(R.id.fragmento1, informacion).commit();
-		}else if(position == 1){
-			AcercaDe frag = new AcercaDe();
-			getFragmentManager().beginTransaction()
-			.replace(R.id.fragmento1, frag).commit();
-		}else if(position == 2){
-			SectoresNegocio frag = new SectoresNegocio();
-			getFragmentManager().beginTransaction()
-			.replace(R.id.fragmento1, frag).commit();
-		}else if(position == 3){
-			Delivery frag = new Delivery();
-			getFragmentManager().beginTransaction()
-			.replace(R.id.fragmento1, frag).commit();
-		}else if(position == 4){
-			ListaProductos frag = new ListaProductos();
-			getFragmentManager().beginTransaction()
-			.replace(R.id.fragmento1, frag).commit();
-		}else if(position == 6){
-			Noticias frag = new Noticias();
-			getFragmentManager().beginTransaction()
-			.replace(R.id.fragmento1, frag).commit();
+		Fragment fragmento = null;
+		switch(position){
+			case 0:
+				fragmento = new FragmentoDemo();
+				break;
+			case 1:
+				fragmento = new AcercaDe();
+				break;
+			case 2:
+				fragmento = new SectoresNegocio();
+				break;
+			case 3:
+				fragmento = new Delivery();
+				break;
+			case 4:
+				fragmento = new ListaProductos();
+				break;
+			case 5:
+				//fragmento = new AcercaDe();
+				break;
+			case 6:
+				fragmento = new Noticias();
+				break;	
 		}
+		if(fragmento != null)
+			switchFragment(fragmento);
 	}
 
 	public class SampleAdapter extends ArrayAdapter<SampleItem> {
@@ -87,17 +88,36 @@ public class MenuFragmento extends ListFragment{
 				convertView = LayoutInflater.from(getContext()).inflate(R.layout.row, null);
 			}
 			ImageView icon = (ImageView) convertView.findViewById(R.id.row_icon);
-			/*
-			if(position==0)
-				icon.setImageResource(R.drawable.ic_launcher);
-			else*/
-			icon.setImageResource(getItem(position).iconRes);
-			TextView title = (TextView) convertView.findViewById(R.id.row_title);
-			title.setText(getItem(position).tag);
+			
+			if(position == 0)
+				icon.setImageResource(R.drawable.menu1);
+			else if(position == 1)
+				icon.setImageResource(R.drawable.menu2);
+			else if(position == 2)
+				icon.setImageResource(R.drawable.menu3);
+			else if(position == 3)
+				icon.setImageResource(R.drawable.menu4);
+			else if(position == 4)
+				icon.setImageResource(R.drawable.menu5);
+			else if(position == 5)
+				icon.setImageResource(R.drawable.menu6);
+			else if(position == 6)
+				icon.setImageResource(R.drawable.menu7);
+			//icon.setImageResource(getItem(position).iconRes);
 
 			return convertView;
 		}
 
+	}
+	
+	private void switchFragment(Fragment fragment) {
+		if (getActivity() == null)
+			return;
+		
+		if (getActivity() instanceof MainActivity) {
+			MainActivity fca = (MainActivity) getActivity();
+			fca.switchContent(fragment);
+		} 
 	}
 	
 	

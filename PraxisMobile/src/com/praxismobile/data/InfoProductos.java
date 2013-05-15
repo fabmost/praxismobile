@@ -88,6 +88,31 @@ public class InfoProductos {
 			"Facturación electrónica"+
 			"Diseñado para cumplir con las más recientes regulaciones sobre comprobantes fiscales digitales. Nuestra solución permite a las empresas llevar un control ágil y seguro para la emisión/recepción de facturas electrónicas.",
 			
-			""
+			"En PRAXIS nos especializamos por ofrecer soluciones integrales en tecnología de información que se adecuen a satisfacer y superar las expectativas de nuestros clientes, con más de 15 años de experiencia, estamos comprometidos con ofrecer servicios y productos con los más altos estándares de calidad."+
+			"\n\nLa factura electrónica es la representación digital de un comprobante fiscal; con la reforma al artículo 29 del Código Fiscal de la Federación, se dispone que a partir del 1 de enero de 2011, se generalice su uso, con ello, los contribuyentes deberán expedir comprobantes digitales por las actividades que realicen."+
+			"\n\nLa factura electrónica cumple con los requisitos legales de los comprobantes tradicionales y garantiza la autenticidad e integridad de su contenido, lo que genera mayor seguridad jurídica y disminuye el riesgo de fraude y evasión fiscal."+
+			"\n\nEn PRAXIS hemos desarrollado soluciones a la medida para satisfacer las necesidades de nuestros clientes; es por ello que nuestra oferta está segmentada con la siguiente cartera de servicios:"+
+			"\n\nSolución PYMES y Personas físicas"+
+			"\n\nEs una solución ágil, 100% integrada a nuestra plataforma BISNET, con tarifas de bajo costo para que los clientes facturen casi de manera inmediata; cumpliendo con todas las disposiciones fiscales vigentes."+
+			"\n\nSolución empresarial"+
+			"\n\nEs la solución que ayuda a las empresas a resolver necesidades específicas de facturación integrándola a su proceso de negocio."+
+			"\n\nSolución YO-Facturo"+
+			"\n\nEs la solución ideal para empresas con venta al público en general. Los clientes generan sus comprobantes fiscales por concepto de un bien o servicio, desde nuestro portal BISNET; contribuyendo a mejorar la satisfacción y servicio al cliente."+
+			"\n\nDesarrollo de ADDENDA"+
+			"\n\nEs la solución que permite generar una factura electrónica de acuerdo a las características comerciales establecidas por los clientes. En PRAXIS contamos con consultores expertos que le ayudarán a desarrollar la adenda comercial que los clientes soliciten."+
+			"\n\nCaracterísticas"+
+			"\n\n-Cumplimiento fiscal."+
+			"\n-Resguardo de información."+
+			"\n-Automatización de procesos."+
+			"\n-Soporte técnico personalizado."+
+			"\n-Adaptación para nuevas disposiciones."+
+			"\n-Desarrollos con altos estándares de calidad."+
+			"\n\nBeneficios"+
+			"\n\n-Reduce costos de operación."+
+			"\n-Incremento de la productividad."+
+			"\n-Mayor seguridad y confiabilidad."+
+			"\n-Procesos más ágiles de envío y recepción."+
+			"\n-Mejora niveles de servicio y atención a clientes."
+	
 	};
 }

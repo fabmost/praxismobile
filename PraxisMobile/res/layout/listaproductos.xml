@@ -2,6 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoapp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
     android:orientation="vertical" >
 
     <ImageView
@@ -12,21 +16,12 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/nuestrosproductos" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView1"
-        android:text="@string/productos"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <ListView
-        android:id="@android:id/list"
+    <GridView
+        android:id="@+id/gridprod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1" >
-    </ListView>
+        android:layout_below="@+id/imageView1"
+        android:verticalSpacing="5dp"
+        android:numColumns="2" />
 
 </RelativeLayout>

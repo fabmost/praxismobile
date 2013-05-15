@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/fondoapp" >
+    
+<ScrollView 
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
@@ -7,6 +15,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
+    
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
@@ -15,14 +24,41 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/ic_launcher" />
 
+    <ImageView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+    
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/video"
+        android:layout_alignRight="@+id/video"
+        android:clickable="true" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@+id/video"
         android:text="Small Text"
         android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <ImageView
+        android:id="@+id/folleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
 
 </RelativeLayout>
 </ScrollView>
+</LinearLayout>

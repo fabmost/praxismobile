@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragment;
 import com.praxismobile.R;
 
 import android.content.Context;
@@ -25,7 +27,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class FragmentoDemo extends Fragment{
+public class FragmentoDemo extends SherlockFragment{
 	
 	Context cont;
 	
@@ -46,6 +48,10 @@ public class FragmentoDemo extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.fragmenttest, container,false);
 		
+		ActionBar actionBar = getSherlockActivity().getSupportActionBar();
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.header));
+        actionBar.setDisplayShowTitleEnabled(false);
+        
 		cont = getActivity().getApplicationContext();
 		
 		ImageView video = (ImageView)view.findViewById(R.id.vid);
