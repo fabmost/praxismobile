@@ -33,7 +33,7 @@ public class ProductosAdapter extends BaseAdapter {
 		ImageView imageView;
 		if(convertView == null){
 			imageView = new ImageView(mContext);
-			imageView.setLayoutParams(new GridView.LayoutParams (230,150));
+			imageView.setLayoutParams(new GridView.LayoutParams (GridView.LayoutParams.WRAP_CONTENT,GridView.LayoutParams.WRAP_CONTENT));
 			//imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 			imageView.setPadding(10, 8, 10, 8);
 		}else{

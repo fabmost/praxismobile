@@ -22,8 +22,9 @@ public class PDF extends Fragment{
 		
 		WebView webView = (WebView)view.findViewById(R.id.pdf);
 		webView.getSettings().setJavaScriptEnabled(true);
+		webView.getSettings().setPluginsEnabled(true);
 		webView.loadUrl("http://docs.google.com/gview?embedded=true&url="+url);
-		
+		//webView.loadUrl(url);
 		return view;
 	}
 

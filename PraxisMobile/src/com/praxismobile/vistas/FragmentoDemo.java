@@ -17,7 +17,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -123,7 +122,7 @@ public class FragmentoDemo extends SherlockFragment{
 		protected Bitmap doInBackground(String... arg0) {
 			Bitmap bitmap = null;
 			try {
-				bitmap = BitmapFactory.decodeStream((InputStream)new URL("http://img.youtube.com/vi/R5nAASDkeOk/2.jpg").getContent());
+				bitmap = BitmapFactory.decodeStream((InputStream)new URL("http://img.youtube.com/vi/R5nAASDkeOk/0.jpg").getContent());
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			} catch (IOException e) {

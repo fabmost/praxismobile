@@ -6,8 +6,8 @@
     android:paddingRight="5dp"
     android:paddingTop="5dp"
     android:background="@drawable/fondoapp" >
-    
-<ScrollView 
+
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
@@ -22,43 +22,49 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
         android:src="@drawable/ic_launcher" />
 
-    <ImageView
+    <com.praxismobile.custom.ResizableImageView
         android:id="@+id/video"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:clickable="true" />
     
-    <ImageView
+    <com.praxismobile.custom.ResizableImageView
         android:id="@+id/play"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:layout_alignLeft="@+id/video"
-        android:layout_alignRight="@+id/video"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:clickable="true" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/video"
-        android:text="Small Text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <ImageView
         android:id="@+id/folleto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="25dp"
         android:clickable="true" />
 
 </RelativeLayout>
 </ScrollView>
+
 </LinearLayout>
