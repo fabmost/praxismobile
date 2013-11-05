@@ -31,6 +31,8 @@ public class NoticiasAdapter extends BaseAdapter {
 	// an array of resources we want to display
 	private Image[] images;
 
+	public String derp;
+	
 	// a context so we can later create a view within it
 	private Context myContext;
 
